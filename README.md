@@ -24,13 +24,13 @@ ZFS and lustre require a lot of packages. These packages are given in the beginn
 Here are some quick readings that I felt were helpful in configuring the ZFS and Lustre
 
 **zfs**
-http://nex7.blogspot.com/2013/03/readme1st.html
-https://arstechnica.com/gadgets/2020/05/zfs-versus-raid-eight-ironwolf-disks-two-filesystems-one-winner/
-https://jrs-s.net/2018/08/17/zfs-tuning-cheat-sheet/
+- http://nex7.blogspot.com/2013/03/readme1st.html
+- https://arstechnica.com/gadgets/2020/05/zfs-versus-raid-eight-ironwolf-disks-two-filesystems-one-winner/
+- https://jrs-s.net/2018/08/17/zfs-tuning-cheat-sheet/
 
 **Lustre**
-https://github.com/DDNStorage/lustre_manual_markdown/blob/master/02.07-Configuring%20a%20Lustre%20File%20System.md
-https://wiki.lustre.org/images/0/0d/LUG2019-Sysadmin-tutorial.pdf
+- https://github.com/DDNStorage/lustre_manual_markdown/blob/master/02.07-Configuring%20a%20Lustre%20File%20System.md
+- https://wiki.lustre.org/images/0/0d/LUG2019-Sysadmin-tutorial.pdf
 
 ## ZFS
 Creating ZFS pools is easy and quite well documented. To get started is easy, just follow the links above to read some explanations from people who can explain much better than I can
@@ -46,6 +46,7 @@ systemctl start lustre
 sed -i '/^SELINUX=/s/.*/SELINUX=disabled/' /etc/selinux/config
 ```
 It is probably best to read the github ddn manual, but here is a simple example:
+
 **MGS**
 ```
 Zpool create mgspool raidz sdb sdc sdd sde
