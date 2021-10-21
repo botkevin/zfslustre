@@ -45,6 +45,7 @@ systemctl start lustre
 ```
 sed -i '/^SELINUX=/s/.*/SELINUX=disabled/' /etc/selinux/config
 ```
+### Creating a lustre fs
 It is probably best to read the github ddn manual, but here is a simple example:
 
 **MGS**
