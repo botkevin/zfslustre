@@ -17,6 +17,7 @@ dnf config-manager --set-enabled powertools
 dnf install -y libyaml-devel kernel-rpm-macros\
  binutils-devel platform-python-devel libtirpc-devel\
  python3-cffi python3-devel kernel-abi-whitelists
+# some versions may have this as ha
 yum install -y --enable-repo=HighAvailability resourceagents
 
 yum install -y kernel-devel
